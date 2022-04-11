@@ -227,7 +227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975721042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -1.21, z: 0}
+  m_LocalPosition: {x: -0.02, y: -1.4, z: 0}
   m_LocalScale: {x: 13.5398855, y: 1.335558, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -241,6 +241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 793403044708491818, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -286,20 +290,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543293, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
-      propertyPath: halfSize.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3212341432029543293, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
-      propertyPath: halfSize.y
-      value: 0.1
+      propertyPath: jumps
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543293, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: jumpCooldown
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3212341432029543293, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
-      propertyPath: checkLayers.m_Bits
-      value: 64
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543294, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_Name

@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203463998011188539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60,7 +60,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 3212341431694901801}
   - component: {fileID: 3212341431694901806}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 18108167, guid: e4fe492bb75216542b51b7fed225a1ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -247,12 +247,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 3212341432029543294}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 381177bdc9e991e48bdc05c6e3eb914e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: 0.75}
+  m_Size: {x: 1, y: 1.5}
   m_Direction: 0
 --- !u!50 &3212341432029543282
 Rigidbody2D:
@@ -290,3 +290,12 @@ MonoBehaviour:
   walkSpeed: 3
   runSpeed: 6
   jumpForce: 5
+  jumps: 2
+  jumpCooldown: 0.3
+  halfSize: {x: 0.5, y: 0.1}
+  offset: {x: 0, y: 0}
+  checkLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  spriteRenderer: {fileID: 3212341431694901806}
+  onGround: 1
