@@ -128,6 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3212341431694901801}
   - component: {fileID: 3212341431694901806}
+  - component: {fileID: 5086209882118528179}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -202,6 +203,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5086209882118528179
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212341431694901800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 857b56613d06673479893f3361219a6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3212341432029543294
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +235,7 @@ GameObject:
   - component: {fileID: 3212341432029543295}
   - component: {fileID: 3212341432029543282}
   - component: {fileID: 3212341432029543293}
-  - component: {fileID: 2276018585355052615}
+  - component: {fileID: 2826683145712651553}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -300,23 +321,17 @@ MonoBehaviour:
     m_Bits: 64
   spriteRenderer: {fileID: 3212341431694901806}
   onGround: 1
---- !u!95 &2276018585355052615
-Animator:
-  serializedVersion: 4
+--- !u!114 &2826683145712651553
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3212341432029543294}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d5cf2e21add8a46832f4b98c036b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 1
+  damageCooldown: 1
