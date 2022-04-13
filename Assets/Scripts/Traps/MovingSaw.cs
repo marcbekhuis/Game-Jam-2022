@@ -25,6 +25,7 @@ public class MovingSaw : MonoBehaviour
 
     private void Update()
     {
+        if (HealthSystem.death) return;
         DirectionCheck();
         progress = Mathf.Clamp(progress + direction * (speed / spriteRenderer.size.y) * Time.deltaTime, 0, 1);
         saw.localPosition = new Vector3(0, Mathf.Lerp(-halfHeight, halfHeight, progress),0);

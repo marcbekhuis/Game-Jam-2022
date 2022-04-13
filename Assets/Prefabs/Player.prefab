@@ -320,6 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   spriteRenderer: {fileID: 3212341431694901806}
+  animator: {fileID: 5086209882118528179}
   onGround: 1
 --- !u!114 &2826683145712651553
 MonoBehaviour:
@@ -335,3 +336,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 1
   damageCooldown: 1
+  animator: {fileID: 5086209882118528179}

@@ -23,6 +23,7 @@ public class SwingBall : MonoBehaviour
 
     private void Update()
     {
+        if (HealthSystem.death) return;
         DirectionCheck();
         progress = Mathf.Clamp(progress + direction * (speed / angle) * Time.deltaTime, 0, 1);
         this.transform.eulerAngles = new Vector3(0,0, this.transform.position.y + Mathf.Lerp(-angle, angle, progress));
