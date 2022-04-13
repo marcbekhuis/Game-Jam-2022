@@ -57,4 +57,11 @@ public class HealthSystem : MonoBehaviour
         if (collision.gameObject.CompareTag("Death"))
             if (Time.time > damageTimer) health--;
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (HealthSystem.death) return;
+        if (collision.gameObject.CompareTag("Death"))
+            if (Time.time > damageTimer) health--;
+    }
 }
