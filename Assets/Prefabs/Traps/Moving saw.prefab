@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6055113504450277965}
   - component: {fileID: 6055113504450277966}
   - component: {fileID: 6055113504450277964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving saw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6055113505248346039}
   - component: {fileID: 6055113505248345160}
   - component: {fileID: 6055113505248346037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: saw
   m_TagString: Death
   m_Icon: {fileID: 0}

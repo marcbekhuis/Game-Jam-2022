@@ -42,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (HealthSystem.death)
+        {
+            rigidbody.velocity = Vector2.zero;
+            return;
+        }
         GroundCheck();
 
         run = Input.GetKey(KeyCode.LeftShift);
