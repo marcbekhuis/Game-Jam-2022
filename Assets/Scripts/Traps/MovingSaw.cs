@@ -27,7 +27,7 @@ public class MovingSaw : MonoBehaviour
     {
         DirectionCheck();
         progress = Mathf.Clamp(progress + direction * (speed / spriteRenderer.size.y) * Time.deltaTime, 0, 1);
-        saw.position = new Vector3(this.transform.position.x, this.transform.position.y + Mathf.Lerp(-halfHeight, halfHeight, progress),0);
+        saw.localPosition = new Vector3(0, Mathf.Lerp(-halfHeight, halfHeight, progress),0);
     }
 
     private void DirectionCheck()

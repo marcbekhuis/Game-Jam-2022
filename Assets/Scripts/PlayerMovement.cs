@@ -21,8 +21,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask checkLayers;
     [Header("References")]
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Animator animator;
 
     private Rigidbody2D rigidbody;
+    bool run;
 
     [HideInInspector] public bool onGround = true;
 
@@ -41,9 +43,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         GroundCheck();
+
+        run = Input.GetKey(KeyCode.LeftShift);
         int x = System.Convert.ToInt32(Input.GetKey(KeyCode.D)) - System.Convert.ToInt32(Input.GetKey(KeyCode.A));
         float speed = walkSpeed;
-        if (Input.GetKey(KeyCode.LeftShift)) speed = runSpeed;
+        if (run) speed = runSpeed;
         
         rigidbody.velocity = new Vector2(x * speed, rigidbody.velocity.y);
         Jump();
@@ -53,6 +57,27 @@ public class PlayerMovement : MonoBehaviour
     private void UpdateVisual()
     {
         spriteRenderer.flipX = rigidbody.velocity.x < 0;
+        if(Mathf.RoundToInt(rigidbody.velocity.x) != 0)
+        {
+            if (run)
+            {
+                animator.SetBool("Walk", false);
+                animator.SetBool("Run", true);
+            }
+            else
+            {
+                animator.SetBool("Walk", true);
+                animator.SetBool("Run", false);
+            }
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
+            animator.SetBool("Run", false);
+        }
+
+        if (!onGround) animator.SetBool("Fall", true);
+        else animator.SetBool("Fall", false);
     }
 
     private void Jump()
@@ -63,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (jumpCounter > 1 && Time.time > jumpTimer)
             {
+                if (onGround) animator.SetTrigger("Jump");
                 rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 jumpTimer = Time.time + jumpCooldown;
                 jumpCounter--;
