@@ -112,7 +112,7 @@ TextureImporter:
         width: 88
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,6 +166,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: buttons_4x_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 32
+        width: 29
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5000011, y: 0.48917854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f2a4ede7f85cb4082f74cf643e5636
+      internalID: -1705658446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -178,6 +199,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       buttons_4x_0: 1421553253
+      buttons_4x_3: -1705658446
       buttons_4x_2: 780818002
       buttons_4x_1: -84923654
   spritePackingTag: 
