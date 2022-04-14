@@ -8623,6 +8623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5637721616496087360, guid: 64a94158b52c5e448861a113d92fe260, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637721616810270126, guid: 64a94158b52c5e448861a113d92fe260, type: 3}
       propertyPath: m_Name
       value: Game UI
@@ -60047,11 +60051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 120.8
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.z
