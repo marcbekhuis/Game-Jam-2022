@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level 1 Lucas.unity
+    guid: 8179aab2f7c7ca24ca7af2953c8cca6a
+  - enabled: 1
+    path: Assets/Scenes/Scene(Sem).unity
+    guid: d9776c41acdcdf54f949552abc4ebbdf
   m_configObjects: {}
