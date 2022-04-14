@@ -367,7 +367,7 @@ CompositeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -399,7 +399,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!483693784 &60720434
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -8623,6 +8623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5637721616496087360, guid: 64a94158b52c5e448861a113d92fe260, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637721616810270126, guid: 64a94158b52c5e448861a113d92fe260, type: 3}
       propertyPath: m_Name
       value: Game UI
@@ -59954,6 +59958,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7625967777754559462, guid: fd9c30d941b104d4399255872de50845, type: 3}
   m_PrefabInstance: {fileID: 313222641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1640502182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3212341432029543294, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
+  m_PrefabInstance: {fileID: 2012279211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1640502188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640502182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1583c754e905ce4f910f09552e106d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1674393048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3932665063549783193, guid: c9cf154b202354443aa05e7ce336fd3a, type: 3}
@@ -60030,11 +60051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.168371
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7502024
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3212341432029543292, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60074,6 +60095,10 @@ PrefabInstance:
       objectReference: {fileID: 2105887765}
     - target: {fileID: 3212341432029543294, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212341432029543294, guid: 016db75651e9feb41946b6b2f2cedfeb, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
