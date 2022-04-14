@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3033801607766035271}
   - component: {fileID: 3033801607766035270}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: Slime
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f70701a47ee5b045a6c425929815e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
-  runSpeed: 6
+  walkSpeed: 1
+  runSpeed: 3
   range: 4
   spriteRenderer: {fileID: 3033801608630161860}
   playerLayer:
@@ -102,9 +102,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.85}
-  m_Size: {x: 1.3, y: 1.7}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.8}
+  m_Size: {x: 1.9, y: 1.6}
+  m_Direction: 1
 --- !u!1 &3033801608630161862
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2111765304, guid: bb863dd1ba8408544afdff42840c4018, type: 3}
+  m_Sprite: {fileID: -1459155307, guid: 75d9dd1ada8465c4eb57c1754e25d879, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -200,7 +200,7 @@ Animator:
   m_GameObject: {fileID: 3033801608630161862}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 544b9b6f040f48f4c92a1af401290919, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3ff27f489d08a8b429439ebd1482086e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
