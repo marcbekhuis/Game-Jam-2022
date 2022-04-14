@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 512733628865627425}
   - component: {fileID: 5344735037096966703}
   - component: {fileID: 3714836393510882457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 3212341431694901801}
   - component: {fileID: 3212341431694901806}
   - component: {fileID: 5086209882118528179}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 3212341432029543282}
   - component: {fileID: 3212341432029543293}
   - component: {fileID: 2826683145712651553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,4 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 1
   damageCooldown: 1
+  deathEffectDelay: 0.1
   animator: {fileID: 5086209882118528179}
+  deathScreen: {fileID: 0}
